@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#news {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1440px;
+  margin: auto;
+
+  .news_content {
+    width: 446px;
+    margin-right: 50px;
+    padding: 10px;
+
+    &:nth-child(3n + 3) {
+      margin-right: 0;
+    }
+
+    .image_wrapper {
+      height: 260px;
+      background-position: center;
+      background-size: cover;
+    }
+
+    .title {
+      min-height: 84px;
+    }
+
+    .author {
+      min-height: 36px;
+    }
+
+    .description {
+      min-height: 42px;
+    }
+  }
+}
